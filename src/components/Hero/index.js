@@ -17,14 +17,16 @@ function Hero() {
     <div className="hero">
       <div className={`hero__content ${loaded ? 'visible' : ''}`}>
         <h1>
-          Future-proofing
+          Digitisation:
           <br />
-          your business
+            the route to
+          <br />
+            business success
         </h1>
         <p>
-          It has never been more important for companies to embrace
-          the digital revolution – and with savvy investments and clever
-          collaboration, the future is bright
+          Now that more and more business leaders have ready access to
+          digital solutions, the possibilities for innovation and productivity
+          are almost endless
         </p>
       </div>
       <div className={`hero__art ${loaded ? 'visible-art' : ''}`}>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 // Styles
 import './App.scss';
 // Data & external methods
-import { FiveGTimeline, retainTalent } from './data';
+import { FiveGTimeline, digitalDev } from './data';
 import analytics from './helpers/analytics';
 
 // Components
@@ -11,6 +11,7 @@ import Hero from './components/Hero';
 import Pagebody from './components/Pagebody';
 import Dropcap from './components/Dropcap';
 import Pullquote from './components/Pullquote';
+import PullQuoteSpecial from './components/Pullquote/subcomponents/PullQuoteSpecial';
 import CTA from './components/CTA';
 import Button from './components/Button';
 import Timeline from './components/Timeline';
@@ -62,230 +63,151 @@ function App() {
     <>
       <Header progress={progress} />
       <Hero />
-      <Pagebody>
+      <PullQuoteSpecial>
+        <Pullquote specialQuote>
+          <h3>
+            We are witnessing a shift to a new revolution, the final part in the UK's transition from an industrial age to a digital one
+          </h3>
+          <p>
+          Neil Bellamy, head of technology, media and telecoms at NatWest
+          </p>
+        </Pullquote>
+      </PullQuoteSpecial>
+      <Pagebody noPadding>
         <AnimationTrigger>
           <p>
-            <Dropcap>C</Dropcap>
-            an you actually be future-proof in a time of rapid
-            technological change? It is a question that many businesses
-            are asking, as technologies such as articial intelligence (AI)
-            and automation supercharge the pace of innovation worldwide.
+            <Dropcap>O</Dropcap>
+            nly the biggest businesses used to be able to aord to invest in cutting-edge technology.
           </p>
           <p>
-          Technological innovation is coming faster than ever, with 94pc of tech
-          decision-makers saying that the rate of technological advancement is
-          higher now than three years ago, according to the Accenture
-          Technology Vision 2019 report.
+            But successive waves of innovation, from the arrival of the web through to smartphones, cloud computing and artificial intelligence (AI), are providing even the smallest businesses with the advantages that were once only available to those with the deepest pockets. 
           </p>
           <p>
-          Businesses need to keep abreast of technology megatrends and adapt to
-          stay relevant, says Neil Bellamy, head of technology, media and
-          telecoms at NatWest. “We're in the middle of a fundamental change
-          from an industrial age to an increasingly digital age,” he says.
-          “Innovation is more and more rapid.”
+            These rapid advances in technology have fuelled new companies across all sectors. Online fashion chain boohoo, Apple Music, online food delivery apps such as Just Eat and Deliveroo, accommodation company Airbnb and ride-hailing app Uber are relatively new, but they are already overtaking their more established rivals.
           </p>
           <p>
-          Mr Bellamy says that British businesses need to “avoid obsessing on
-          individual technologies or fads to look beyond the immediate horizon
-          and consider megatrends and convergent technologies. These will
-          shape not only their business but whole sectors and industries.”
+            In macro terms, Neil Bellamy, head of technology, media and telecoms at NatWest, says we are witnessing a shift to a new revolution, the final part in the UK’s transition from an industrial age to a digital one.
           </p>
           <p>
-          “All businesses are being framed by one macro force: complexity,” says
-          Nelson Phillips, professor of strategy and innovation at Imperial
-          College Business School in London. “From automotive to nancial
-          services, retail to leisure and luxury, adapting to the disruption
-          associated with new technologies, and complex customer and
-          consumer demand, is framing everything. Digital strategy has become
-          corporate strategy. It is reshaping how whole industries work.”
+            He says: “What digitisation means to most small and medium-sized firms is technology that can enhance their business.
+          </p>
+          <p>
+            “It can make them more productive by saving costs, reducing back office and internal processes, and by making the customer journey more simple and more effective. It can also help firms discover new business models,” he says.
+          </p>
+          <p>
+            NatWest, for example, has recently launched Mettle, a digital banking platform that combines a current account with invoicing, payment chasing and bookkeeping capabilities, helping firms manage their finances.
           </p>
         </AnimationTrigger>
       </Pagebody>
-      <Slider />
-      <Pagebody title="The rise of the 5G workforce" img={ladder}>
+      <Timeline
+        title="Major digital developments in UK business"
+        items={digitalDev}
+        anchor="talent"
+      />
+      <Pagebody title="Reaping the benefits of digitisation" img={ladder}>
         <AnimationTrigger>
-          <p>
-            In response, people are embracing these changes and actively
-            looking for non-traditional work, says Chris Gray, brand leader at
-            recruitment company Manpower UK. Mr Gray says: “Over a third of UK
-            workers are now looking for alternatives – including freelancing
-            and gig working – over full-time jobs.”
-          </p>
-          <p>
-            Workplaces are also facing challenges from technology, with up to
-            38pc of work potentially becoming automated, according to Accenture
-            research.
-          </p>
-          <Pullquote quote>
+          <Pullquote>
             <h3>
-              For mid-market companies, automation will mean a change in
-              mindset about recruitment and HR.
+            Being on a level playing field
             </h3>
-            <p>Dr Naeema Pasha, director of careers at Henley Business School.</p>
+            <p>Any business, large or small, can now be digital. But small and medium-sized companies, which tend to lack the complex multi-layered structures of their larger rivals, are well placed to grasp the opportunities that digital offers and can use it to reach new potential customers or those of rivals.</p>
           </Pullquote>
         </AnimationTrigger>
         <AnimationTrigger>
-          <p>
-            Dr Pasha says: “Career and human resources professionals need to do
-            more to support workers as traditional HR delivery has not been
-            adapted sufficiently to the future of work.”
-          </p>
-          <p>
-            Companies will need to focus on recruiting adaptable workers who
-            have the skills to keep up with technology, she says. “Companies
-            will need to retrain and recruit a workforce that is able to adapt
-            to change effectively. The crucial skills include agility; critical
-            thought; resilience and – most importantly – human skills and
-            emotional intelligence, in order to build teams, collaborate and
-            enable successful growth and transformation.”
-          </p>
-          <p>
-            Technology can already help companies find the right employees,
-            says Chris Gray, brand leader, Manpower UK. He says: “Integrating
-            technology into your organisation is about striking the right
-            balance. Take HR for example. Attracting and retaining the right
-            talent should not be a battle between human and robot.
-          </p>
-          <p>
-            “The best approach for HR is to blend high-tech with a high-touch
-            approach. HR leaders can use automation and artificial intelligence
-            (AI) to reduce the administrative burden and streamline hiring
-            processes, without losing the personal interaction that candidates
-            have come to value in recent years.
-          </p>
-          <p>
-            “In fact, with so much of the initial contact between candidates
-            and employers becoming automated, the need for in-person
-            interaction is only set to further increase in importance.”
-          </p>
-          <Pullquote quote>
+          <Pullquote>
             <h3>
-              Our research shows nearly two-thirds (61%) of UK jobseekers
-              favour in-person interviews as their preferred recruitment method.
+            Greater business insight
             </h3>
             <p>
-              Morten Petersen, of the artificial-intelligence-enabled
-              recruitment company Worksome.
+            Every business has data, from invoices and price lists through to customer records. Using technologies such as big data and advanced analytics, companies can leverage this information to spot connections that would otherwise remain hidden, as well as forecasting demand and customer behaviour.
             </p>
           </Pullquote>
-          <p>
-            For employers in the UK, this trend offers an opportunity,
-            according to Mr Petersen. He says: “Freelancers will come to play
-            an even more pivotal role in the British economy than they already
-            do. Since 2009, the freelance economy in the UK has grown by 25pc
-            and generates an estimated £109bn a year, according to IPSE.
-          </p>
-          <p>
-            “There are around two million freelance workers in the UK. They
-            represent an amazing pool of talent that can help companies
-            suffering from the skills shortage.”
-          </p>
-          <p>
-            The shift in Britain’s way of working is reflected around the
-            world, says Adrian Wright, principal lecturer at the University of
-            Central Lancashire. Dr Wright says: “The changing workforce in the
-            UK is reflective of other developed economies, as shifts to new
-            emerging industries have led to more part-time work, increased
-            self-employment and casual work.”
-          </p>
+        </AnimationTrigger>
+        <AnimationTrigger>
+          <Pullquote>
+            <h3>
+            Customer knowledge
+            </h3>
+            <p>
+            Business owners can store and record more information than ever before. This helps companies to better understand the needs of smaller, and more lucrative, segments of their customer base.
+            </p>
+          </Pullquote>
+        </AnimationTrigger>
+        <AnimationTrigger>
+          <Pullquote>
+            <h3>
+            Increasing productivity
+            </h3>
+            <p>
+            Digitisation allows companies to automate many processes, meaning work is faster and more efficient. Because much of the information is stored centrally in the cloud, staff can work flexibly and from anywhere, also improving productivity.
+            </p>
+          </Pullquote>
+        </AnimationTrigger>
+        <AnimationTrigger>
+          <Pullquote>
+            <h3>
+            Reducing overheads
+            </h3>
+            <p>
+            Cloud computing allows even the smallest of companies to rent business apps over the internet at a much lower cost than buying or building them in-house. Businesses can get access to anything from finance, sales and marketing packages to cutting-edge AI, and pay for just what they use, slashing capital expenditure.
+            </p>
+          </Pullquote>
         </AnimationTrigger>
       </Pagebody>
       <Pagebody
-        title="Trends in the global workforce"
+        title="… And what you should be aware of"
         img={globe}
       >
         <AnimationTrigger>
-          <p>
-            These trends are mirrored across territories including America and
-            Europe, says Mr Petersen. “In the next five years, 45pc of workers
-            in Europe will be self-employed, either completely or in combination
-            with another job, according to (market intelligence provider) IDC.
-            Fifty-three million people in the US are already freelancing either
-            full-time or part-time.”
-          </p>
-          <p>
-            This means that workers across Europe are embracing new ways of
-            working, and are reluctant to engage in traditional ways of applying
-            for jobs, says Mr Bradley.
-          </p>
+          <Pullquote>
+            <h3>
+            Security concerns
+            </h3>
+            <p>Digitisation means storing and using data responsibly and safely. Cybersecurity attacks are a huge risk for companies, particularly small and medium-sized ones, which are seen as easier targets than their larger counterparts. But by having proper processes in place from the outset and ways to identify authorised users and non-authorised users, digitisation can be secure.</p>
+          </Pullquote>
         </AnimationTrigger>
-        <Pullquote quote>
-          <h3>
-            The employment landscape is shifting. With a widespread skills
-            shortage, employers are under constant pressure to attract and
-            retain talent.
-          </h3>
-          <p>Richard Bradley, MD UK & Ireland of staffing company Kelly Services.</p>
-        </Pullquote>
         <AnimationTrigger>
-          <p>
-            One way they can do this is by being flexible. Kelly Services’
-            research found that in the UK a relatively large number of workers
-            aged 15-64 work full-time, with 80pc in full-time work, 14pc
-            self-employed and 6pc on temporary contracts, according to Eurostat
-            statistics. Around a third, 34pc of workers, have been in their role
-            for 10 years.
-          </p>
-          <p>
-            Other countries are even more reliant on temporary jobs. In the
-            Netherlands, 64pc of workers are full-time, with 21pc temporary and
-            15pc self-employed.
-          </p>
-          <p>
-            In Italy, 63pc are full-time, 16pc are temporary, and 21pc
-            self-employed. Italian workers tend to be more loyal to one
-            employer, with 52pc having stayed in their current role for 10
-            years.
-          </p>
-          <p>
-            Ireland’s statistics are closer to the UK’s, with 77pc in full-time
-            employment, 9pc in temporary employment and 14pc self-employed, and
-            42pc of workers have stayed in their current role for 10 years.
-          </p>
-          <p>
-            In France, 72pc of workers are full-time, with 17pc on temporary
-            contracts and 11pc self-employed; 46pc of workers have been in their
-            current role for 10 years.
-          </p>
+          <Pullquote>
+            <h3>
+            Cost
+            </h3>
+            <p>
+            Every business has data, from invoices and price lists through to customer records. Using technologies such as big data and advanced analytics, companies can leverage this information to spot connections that would otherwise remain hidden, as well as forecasting demand and customer behaviour.
+            </p>
+          </Pullquote>
         </AnimationTrigger>
-        <Pullquote quote>
-          <h3>
-            Companies actively seeking skills and experience may have to rethink
-            their recruitment approach. Under 40% of our interviewees said they
-            would go through the traditional job application process to find
-            new or different work.
-          </h3>
-          <p>
-            Richard Bradley, MD UK & Ireland of staffing company Kelly Services.
-          </p>
-        </Pullquote>
         <AnimationTrigger>
-          <p>
-            This has also filtered down into the way that businesses operate
-            day-to-day. Several companies now offer software such as employee
-            engagement platforms, which integrate messaging with work-related
-            functions such as schedules, delivered via apps.
-          </p>
-          <p>
-            Heathrow and Exclusive Hotels use software from Beekeeper, and have
-            subsequently seen increased employee satisfaction and decreased
-            staff turnover.
-          </p>
-          <p>
-            Cristian Grossmann, chief executive, Beekeeper, says: “You might
-            assume it’s just millennials who want to communicate through a
-            team app, but this is not the case. In fact, the baby-boomer
-            generation has also embraced this tool, and they are adopting
-            communications and information technology at a higher rate than
-            younger generations.
-          </p>
-          <p>
-            “In our experience, we find that all employees, regardless of age or
-            role, want the ability to communicate and feel engaged in the
-            workplace.”
-          </p>
+          <Pullquote>
+            <h3>
+            Customer knowledge
+            </h3>
+            <p>
+            Business owners can store and record more information than ever before. This helps companies to better understand the needs of smaller, and more lucrative, segments of their customer base.
+            </p>
+          </Pullquote>
+        </AnimationTrigger>
+        <AnimationTrigger>
+          <Pullquote>
+            <h3>
+            Increasing productivity
+            </h3>
+            <p>
+            Digitisation allows companies to automate many processes, meaning work is faster and more efficient. Because much of the information is stored centrally in the cloud, staff can work flexibly and from anywhere, also improving productivity.
+            </p>
+          </Pullquote>
+        </AnimationTrigger>
+        <AnimationTrigger>
+          <Pullquote>
+            <h3>
+            Reducing overheads
+            </h3>
+            <p>
+            Cloud computing allows even the smallest of companies to rent business apps over the internet at a much lower cost than buying or building them in-house. Businesses can get access to anything from finance, sales and marketing packages to cutting-edge AI, and pay for just what they use, slashing capital expenditure.
+            </p>
+          </Pullquote>
         </AnimationTrigger>
       </Pagebody>
+      <Slider />
       <Pagebody purple anchor="challenges">
         <AnimationTrigger>
           <h2 className="title__content">Tackling the talent drain in Europe</h2>
@@ -494,11 +416,6 @@ function App() {
           </p>
         </AnimationTrigger>
       </Pagebody>
-      <Timeline
-        title="How businesses can attract and retain talent"
-        items={retainTalent}
-        anchor="talent"
-      />
       <Pagebody
         title="How to keep talent"
         img={trophy}
