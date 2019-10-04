@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Bubble from './subcomponents/Bubble';
 import Bubbles from '../Bubbles';
 
-// import { verticalSlider } from '../../data';
+import { verticalSlider } from '../../data';
 
 import './style.scss';
 

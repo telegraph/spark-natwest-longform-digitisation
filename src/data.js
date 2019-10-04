@@ -190,3 +190,101 @@ export const digitalDev = [
       'Automation predicted to dramatically change the world of work; up to 30pc of jobs could be replaced by robots by this year, consultancy PwC forecasts',
   },
 ];
+
+export const verticalSlider = [
+  {
+    stat: 'Automation',
+    copy:
+      'In professional services, such as the accounting, legal and consulting sectors, the automation of routine tasks such as invoicing is already saving time and reducing costs. Increasingly, AI and machine learning will enable innovation and differentiation in product and service offerings as well as the automation of more complex tasks.',
+    coordTop: '6',
+    coordRight: '60',
+  },
+  {
+    stat: 'Navigation and control systems',
+    copy:
+      'Electric technology is already redefining the way cars use fuel, with electric, hybrid and solar energy systems beginning to displace internal combustion engine and gas-fed engines. However, it is the growth of autonomous technologies that will redefine the driving experience, with control slowly being handed over to onboard computers. Ultimately customers will interact with these navigation systems, but will not be in direct control.',
+    coordTop: '12',
+    coordRight: '15',
+  },
+  {
+    stat: 'Digital tracking',
+    copy:
+      'Tiny sensors mean manufacturers can monitor products long after they have left the factory. This lets customers know how long goods will take to arrive with customers. It also allows manufacturers to offer that monitoring to their customers as an additional, paid-for, service – warning customers if a component is wearing out or malfunctioning, for example.',
+    coordTop: '21',
+    coordRight: '42',
+  },
+  {
+    stat: 'Just-in-time delivery',
+    copy:
+      'Big data lets manufacturers track each item sold, including sale date and time. Inputting additional information such as when demand peaks and drops means companies can generate detailed demand forecasts and manufacture products to order, minimising the amount of inventory that will go unsold.',
+    coordTop: '32',
+    coordRight: '20',
+  },
+  {
+    stat: 'Dynamic pricing',
+    copy:
+      'Retailers can use algorithms that change prices according to various criteria, for example matching the lowest competitor’s price or keeping a price below average. Because the process is automated, retailers can react to rivals’ moves in minutes rather than days, improving margins and top-line profit.',
+    coordTop: '43',
+    coordRight: '65',
+  },
+  {
+    stat: 'Data analytics',
+    copy:
+      'Firms can increasingly capture high-quality information on their customers, allowing them to understand who they are and what they want. Sectors such as banking and leisure, for example, can use this to build tailored, customised promotions and offers to meet those demands, increasing customer loyalty.',
+    coordTop: '54',
+    coordRight: '30',
+  },
+  {
+    stat: 'Chatbots',
+    copy:
+      'Banks have already taken advantage of AI-enabled tools such as chatbots to interact with customers. This is just the beginning. AI is also enabling banks to automate credit scoring and predict future customer behaviours. Automation means staff can focus on valuable, higher-level work such as conversations with customers about new products.',
+    coordTop: '65',
+    coordRight: '54',
+  },
+  {
+    stat: 'Artificial intelligence',
+    copy:
+      'AI is increasingly being used to detect diseases, such as cancers, more accurately and at an early stage. The use of AI is also allowing health organisations to review X-rays faster and with more accuracy. Meanwhile, a rapid increase in consumer tech means doctors and other health specialists are able to better monitor and detect disease and illness earlier when it is still treatable.',
+    coordTop: '76',
+    coordRight: '10',
+  },
+];
+
+export const basicSlider = [
+  {
+    img: 'test',
+    logo: 'test',
+    copy:
+      'Food wholesaler Bidfood launched its ‘Plate 2 Planet’ initiative with Fairtrade Foundation and Fairshare to help pubs and restaurants focus on sustainability in the food business. Bidfood says that 18-20 million tonnes of food is wasted each year in the UK, and half this waste occurs in the food industry. The company also donates meals to charities at all its sites.<br /><br /> Heather Angus, HR & Sustainability Director at Bidfood said, "Collaboration is the vital ingredient to success in sustainability. Working amongst like-minded businesses to support the industry in making positive change will help any business in achieving its sustainability goals."',
+  },
+  {
+    img: 'test',
+    logo: 'test',
+    copy:
+      'Carpet tile giant Interface was an early innovator in sustainability, with founder Ray Anderson embarking on a mission in the 1990s to turn the company into one of the first sustainable businesses. His goal was to have no negative impact on the environment by 2020 – by eliminating waste and emissions, and using renewable materials and energy. Anderson, who died in 2011, said that his goal was: “We’ll be doing well... very well... by doing good. That’s the vision.”',
+  },
+  {
+    img: 'test',
+    logo: 'test',
+    copy:
+      'Grooming brand men-ü aims to reduce the huge amount of plastic used in men’s shaving products by selling refill packs, and selling products in a more concentrated form in smaller bottles. The company says that these initiatives can reduce the amount of packaging by 90pc.<br /><br /> Founder Graham Fish says: “As packaging became more of an issue, we realised that if we launched refill packs not only would these be cheaper but also facilitate reuse and recycling. We have ultra-concentrate products that not only provide better performance but also up to 90pc less packaging than other grooming products.”',
+  },
+  {
+    img: 'test',
+    logo: 'test',
+    copy:
+      'The Mercato Metropolitano food market in south London constantly experiments with new ways to be more sustainable, from eliminating single-use plastic to growing shiitake mushrooms using old coffee grounds. Stalls at the market grow vegetables and herbs on site using hydroponics and aquaponics.<br /><br /> Andrea Rasca, founder of Metropolitano, says: “Sustainability comes first in everything we do. So many consumers want to minimise their impact on the environment, but businesses are failing to offer them options that don’t compromise on price and quality – especially in the food space, where supermarkets and high-street chains have dominated for too long.”',
+  },
+  {
+    img: 'test',
+    logo: 'test',
+    copy:
+      'LIghtfoot is an in-vehicle gadget described as a “Fitbit for cars”, which helps drivers find their engine’s sweet spot. It reduces fuel use by 20pc, and last year alone the business helped users save £3.4bn in fuel costs and 3,666 tonnes of emissions.<br /><br /> Founder and chief executive Mark Roberts says: “I believe what we are seeing is a cultural shift in the way we view our use of resources and place in the ecosystem. People are more aware than ever that our behaviour and habits need addressing if we want to prevent climate breakdown.”',
+  },
+  {
+    img: 'test',
+    logo: 'test',
+    copy:
+      'Every year, 2.5 billion coffee cups are thrown away in the UK. While many plastic coffee cups are recyclable, only one in 400 plastic cups is recycled. Black Sheep Coffee uses 100pc vegware packaging, made from vegetable by-products, which is fully compostable.<br /><br /> Founders Gabriel Shohet and Eirik Holth also support local homeless people. Mr Shohet says: “Our staff survey results speak for themselves: the primary reason for people joining Black Sheep isn’t pay but the values that our company stands for. “We think that the idea of offering a discount for bringing your own cup is absurd. Why offer plastic cups in the first place?”',
+  },
+];
