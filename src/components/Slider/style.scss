@@ -66,6 +66,7 @@
     transform: translateX(50%);
     border-radius: 10px;
     overflow: hidden;
+    transition: height 0.4s;
 
     .container__item {
       position: absolute;

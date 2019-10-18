@@ -35,7 +35,7 @@ export default function BasicSlider() {
   return (
     <div className="basic-slider">
       <h2 className="basic-slider__title">
-        Seven sustainable businesses setting the trend
+        Meet the digital pioneers
       </h2>
       <div className="basic-slider__container" style={{ height: `${currentSlideHeight}px` }}>
         <div className="controls">

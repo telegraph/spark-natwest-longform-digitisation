@@ -71,14 +71,14 @@ function VerticalSlider() {
 
   return (
     <div className="vertical-slider" ref={bubbleSlider}>
-      <h2 className={`vertical-slider__title ${fixed ? 'fixed' : ''} ${titleFade ? 'fade' : ''}`} ref={bubbleTitle}>Sustainability in numbers</h2>
+      <h2 className={`vertical-slider__title ${fixed ? 'fixed' : ''} ${titleFade ? 'fade' : ''}`} ref={bubbleTitle}>What can digitisation actually do for your business?</h2>
       <div className="vertical-slider__container">
         {data.map((item, i) => {
           return (
             <Bubble right={item.coordRight} top={item.coordTop} title={item.stat} copy={item.copy} scrolled={scrolled} conDimen={conDimensions} key={`bubble-${i + 1}`} />
           );
         })}
-      <Bubbles lessBubbles />
+        <Bubbles lessBubbles />
       </div>
     </div>
   );

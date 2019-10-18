@@ -12,6 +12,32 @@ import handsShaking from './assets/retain-talent/hands_shaking.svg';
 import parasol from './assets/retain-talent/parasol.svg';
 import plant from './assets/retain-talent/plant.svg';
 
+// Digital timeline imports
+import cloud from './assets/digital-timeline/cloud.svg';
+import clothes from './assets/digital-timeline/clothes.svg';
+import thumbs from './assets/digital-timeline/thumbs.svg';
+import bowl from './assets/digital-timeline/bowl.svg';
+import smartphone from './assets/digital-timeline/smartphone.svg';
+import card from './assets/digital-timeline/card.svg';
+import robot from './assets/digital-timeline/robot.svg';
+import car from './assets/digital-timeline/car.svg';
+import bricks from './assets/digital-timeline/bricks.svg';
+import wallet from './assets/digital-timeline/wallet.svg';
+import sign from './assets/digital-timeline/sign.svg';
+import teddy from './assets/digital-timeline/teddy.svg';
+import lifebuoy from './assets/digital-timeline/lifebuoy.svg';
+import robots from './assets/digital-timeline/robots.svg';
+
+// case study images
+import ueniHeadshot from './assets/case-studies/Ueni/ueni-headshot.png';
+import ueniLogo from './assets/case-studies/Ueni/ueni-logo.png';
+import straightHeadshot from './assets/case-studies/straight/straight-headshot.png';
+import straightLogo from './assets/case-studies/straight/straight-logo.png';
+import oppoHeadshot from './assets/case-studies/Oppo/oppo-headshot.png';
+import oppoLogo from './assets/case-studies/Oppo/oppo-logo.png';
+import zenHeadshot from './assets/case-studies/zen/zen-headshot.png';
+import zenLogo from './assets/case-studies/zen/zen-logo.png';
+
 export const FiveGTimeline = [
   {
     id: 0,
@@ -100,91 +126,91 @@ export const transformingLandscape = [
 
 export const digitalDev = [
   {
-    img: clock,
+    img: books,
     title: '1994',
     copy:
       'Amazon.com launches as an online book retailer, eventually growing into a global giant by utilising technology to expand into a variety of other sectors from video streaming services and devices to cloud services and, most recently, groceries',
   },
   {
-    img: handsShaking,
+    img: cloud,
     title: '2000',
     copy:
       'Cloud computing becomes increasingly common, enabling companies to use on-demand computing services, from applications to storage and processing power, on pay-as-you-go',
   },
   {
-    img: books,
+    img: clothes,
     title: '2000',
     copy:
       'Online fashion company Asos launches, rapidly becoming a huge brand despite having no physical shops',
   },
   {
-    img: parasol,
+    img: thumbs,
     title: '2004',
     copy:
       'Facebook launches, the start of a social networking revolution where people begin to see the internet as a way to socialise and make friends',
   },
   {
-    img: plant,
+    img: bowl,
     title: '2006',
     copy:
       'Just Eat launches in the UK, sparking a food revolution in which ordering a takeaway from an independent mobile platform changes from being a novelty to typical behaviour',
   },
   {
-    img: plant,
+    img: smartphone,
     title: '2007',
     copy:
       'Apple’s iPhone launches, sparking a revolution in how people use their phones, increasingly relying on them to shop, make payments and provide entertainment',
   },
   {
-    img: plant,
+    img: card,
     title: '2007',
     copy:
       'Contactless payments launch, forcing retailers to update their payment terminals to accept touch-and-go technology',
   },
   {
-    img: plant,
+    img: robot,
     title: '2010',
     copy:
       'Artificial intelligence (AI) becomes increasingly common, with companies using machine-learning algorithms and chatbots to automate services',
   },
   {
-    img: plant,
+    img: car,
     title: '2012',
     copy:
       'Uber launches in London, becoming the UK’s first major cab-hailing app and allowing users to get a ride in minutes from their phone',
   },
   {
-    img: plant,
+    img: bricks,
     title: '2014',
     copy:
       'Online estate agent Purple Bricks launches, challenging traditional rivals by allowing customers to search and arrange viewings online; unusually, sellers pay a flat fee, not commission',
   },
   {
-    img: plant,
+    img: wallet,
     title: '2015',
     copy:
       'Apple Pay launches in the UK, allowing people to use their phone as a wallet for the first time',
   },
   {
-    img: plant,
+    img: sign,
     title: '2016',
     copy:
       'BHS department store chain collapses after it fails to adapt to changing customer expectations and loses brand relevance',
   },
   {
-    img: plant,
+    img: teddy,
     title: '2018',
     copy:
       'Toy chain Toys R Us collapses after being hurt by cheaper, online rivals and failing to offer shoppers a more experiential service',
   },
   {
-    img: plant,
+    img: lifebuoy,
     title: '2018',
     copy:
       'House of Fraser collapses and is rescued by Mike Ashley’s Sports Direct; the department store chain’s digital offering lagged behind rivals',
   },
   {
-    img: plant,
+    img: robots,
     title: '2030',
     copy:
       'Automation predicted to dramatically change the world of work; up to 30pc of jobs could be replaced by robots by this year, consultancy PwC forecasts',
@@ -252,39 +278,27 @@ export const verticalSlider = [
 
 export const basicSlider = [
   {
-    img: 'test',
-    logo: 'test',
+    img: ueniHeadshot,
+    logo: ueniLogo,
     copy:
-      'Food wholesaler Bidfood launched its ‘Plate 2 Planet’ initiative with Fairtrade Foundation and Fairshare to help pubs and restaurants focus on sustainability in the food business. Bidfood says that 18-20 million tonnes of food is wasted each year in the UK, and half this waste occurs in the food industry. The company also donates meals to charities at all its sites.<br /><br /> Heather Angus, HR & Sustainability Director at Bidfood said, "Collaboration is the vital ingredient to success in sustainability. Working amongst like-minded businesses to support the industry in making positive change will help any business in achieving its sustainability goals."',
+      'Ueni utilises digital technology to help small companies build an online presence at a low cost. Founded in 2014, it is already on track to sign up 3,000 new businesses a day. The company uses automation via a chatbot that interacts with new customers, asking them questions that eventually provide the information required.<br /><br /> Co-founder Christine Telyan says creating the business simply would not have been possible without automation and AI. “It’s embedded in what we do. To do this at scale, to be able to serve customers with a high-quality product, we have to rely on automation”. ',
   },
   {
-    img: 'test',
-    logo: 'test',
+    img: straightHeadshot,
+    logo: straightLogo,
     copy:
-      'Carpet tile giant Interface was an early innovator in sustainability, with founder Ray Anderson embarking on a mission in the 1990s to turn the company into one of the first sustainable businesses. His goal was to have no negative impact on the environment by 2020 – by eliminating waste and emissions, and using renewable materials and energy. Anderson, who died in 2011, said that his goal was: “We’ll be doing well... very well... by doing good. That’s the vision.”',
+      'Straight Teeth Direct is a digital cosmetic teeth-straightening business that analyses customers’ dentition from selfies. The company then sends out teeth moulds that the customer uses and posts back. In turn, Straight Teeth Direct uses these to send out personalised aligners. The customer’s progress is monitored by professional dentists from photos they upload to the company via the app or website.<br /><br /> “People want something which is accessible, affordable, convenient and high-quality so then the question is in reverse: ‘How can I use technology to make those things happen?’ ” says Aalok Y Shukla, co-founder and chief executive of Straight Teeth Direct.',
   },
   {
-    img: 'test',
-    logo: 'test',
+    img: oppoHeadshot,
+    logo: oppoLogo,
     copy:
-      'Grooming brand men-ü aims to reduce the huge amount of plastic used in men’s shaving products by selling refill packs, and selling products in a more concentrated form in smaller bottles. The company says that these initiatives can reduce the amount of packaging by 90pc.<br /><br /> Founder Graham Fish says: “As packaging became more of an issue, we realised that if we launched refill packs not only would these be cheaper but also facilitate reuse and recycling. We have ultra-concentrate products that not only provide better performance but also up to 90pc less packaging than other grooming products.”',
+      'Healthy ice-cream company Oppo managed to get a foothold in the competitive fast-moving consumer goods industry by using technology to find natural ingredients that enhanced taste while improving health.<br /><br /> When it started five years ago it was one of the only players in the market, but since then larger competitors have entered the market. Despite this, the company has continued to grow because it has been able to innovate faster than its larger rivals. “That’s the benefit of a small company – you can be much more agile and move much faster,” says co-founder Charlie Thuillier.',
   },
   {
-    img: 'test',
-    logo: 'test',
+    img: zenHeadshot,
+    logo: zenLogo,
     copy:
-      'The Mercato Metropolitano food market in south London constantly experiments with new ways to be more sustainable, from eliminating single-use plastic to growing shiitake mushrooms using old coffee grounds. Stalls at the market grow vegetables and herbs on site using hydroponics and aquaponics.<br /><br /> Andrea Rasca, founder of Metropolitano, says: “Sustainability comes first in everything we do. So many consumers want to minimise their impact on the environment, but businesses are failing to offer them options that don’t compromise on price and quality – especially in the food space, where supermarkets and high-street chains have dominated for too long.”',
-  },
-  {
-    img: 'test',
-    logo: 'test',
-    copy:
-      'LIghtfoot is an in-vehicle gadget described as a “Fitbit for cars”, which helps drivers find their engine’s sweet spot. It reduces fuel use by 20pc, and last year alone the business helped users save £3.4bn in fuel costs and 3,666 tonnes of emissions.<br /><br /> Founder and chief executive Mark Roberts says: “I believe what we are seeing is a cultural shift in the way we view our use of resources and place in the ecosystem. People are more aware than ever that our behaviour and habits need addressing if we want to prevent climate breakdown.”',
-  },
-  {
-    img: 'test',
-    logo: 'test',
-    copy:
-      'Every year, 2.5 billion coffee cups are thrown away in the UK. While many plastic coffee cups are recyclable, only one in 400 plastic cups is recycled. Black Sheep Coffee uses 100pc vegware packaging, made from vegetable by-products, which is fully compostable.<br /><br /> Founders Gabriel Shohet and Eirik Holth also support local homeless people. Mr Shohet says: “Our staff survey results speak for themselves: the primary reason for people joining Black Sheep isn’t pay but the values that our company stands for. “We think that the idea of offering a discount for bringing your own cup is absurd. Why offer plastic cups in the first place?”',
+      'When internet service provider Zen Internet began in 1995, the online world was still in its infancy. Since then the company has grown rapidly, now employing almost 500 staff and serving more than 100,000 customers. Zen Internet’s growth has been driven by continual investment in technology.<br /><br /> “Being in the technology industry is fantastic because technology is always advancing, and those advances bring change, and change always brings opportunity. Since 1995 we’ve grown every year by making the most of that opportunity,” says founder Richard Tang.',
   },
 ];

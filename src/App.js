@@ -22,17 +22,14 @@ import Credits from './components/Credits';
 import Footer from './components/Footer';
 import Socials from './components/Socials';
 import AnimationTrigger from './components/AnimationTrigger';
-import Bubbles from './components/Bubbles';
 import VerticalSlider from './components/VerticalSlider';
 
 // Assets
-import ladder from './assets/titles/ladder.svg';
-import globe from './assets/titles/globe.svg';
-import dumbbell from './assets/titles/dumbbell.svg';
-import plane from './assets/titles/plane.svg';
-import trophy from './assets/titles/trophy.svg';
+import reaping from './assets/titles/reaping.svg';
+import aware from './assets/titles/aware.svg';
+import evolving from './assets/titles/evolving.svg';
 import Broughttyb from './components/Broughttyb';
-import stars from './assets/stars.svg';
+import futureHold from './assets/titles/future-hold.svg';
 
 function App() {
   const [progress, setProgress] = useState(0);
@@ -106,9 +103,9 @@ function App() {
         items={digitalDev}
         anchor="talent"
       />
-      <Pagebody title="Reaping the benefits of digitisation" img={ladder}>
+      <Pagebody title="Reaping the benefits of digitisation" img={reaping}>
         <AnimationTrigger>
-          <Pullquote>
+          <Pullquote notopborder>
             <h3>
               Being on a level playing field
             </h3>
@@ -116,7 +113,7 @@ function App() {
           </Pullquote>
         </AnimationTrigger>
         <AnimationTrigger>
-          <Pullquote>
+          <Pullquote notopborder>
             <h3>
               Greater business insight
             </h3>
@@ -126,7 +123,7 @@ function App() {
           </Pullquote>
         </AnimationTrigger>
         <AnimationTrigger>
-          <Pullquote>
+          <Pullquote notopborder>
             <h3>
               Customer knowledge
             </h3>
@@ -136,7 +133,7 @@ function App() {
           </Pullquote>
         </AnimationTrigger>
         <AnimationTrigger>
-          <Pullquote>
+          <Pullquote notopborder>
             <h3>
               Increasing productivity
             </h3>
@@ -146,7 +143,7 @@ function App() {
           </Pullquote>
         </AnimationTrigger>
         <AnimationTrigger>
-          <Pullquote>
+          <Pullquote notopborder>
             <h3>
               Reducing overheads
             </h3>
@@ -158,10 +155,10 @@ function App() {
       </Pagebody>
       <Pagebody
         title="… And what you should be aware of"
-        img={globe}
+        img={aware}
       >
         <AnimationTrigger>
-          <Pullquote>
+          <Pullquote notopborder>
             <h3>
               Security concerns
             </h3>
@@ -169,7 +166,7 @@ function App() {
           </Pullquote>
         </AnimationTrigger>
         <AnimationTrigger>
-          <Pullquote>
+          <Pullquote notopborder>
             <h3>
               Cost
             </h3>
@@ -179,7 +176,7 @@ function App() {
           </Pullquote>
         </AnimationTrigger>
         <AnimationTrigger>
-          <Pullquote>
+          <Pullquote notopborder>
             <h3>
               Customer knowledge
             </h3>
@@ -189,7 +186,7 @@ function App() {
           </Pullquote>
         </AnimationTrigger>
         <AnimationTrigger>
-          <Pullquote>
+          <Pullquote notopborder>
             <h3>
               Increasing productivity
             </h3>
@@ -199,7 +196,7 @@ function App() {
           </Pullquote>
         </AnimationTrigger>
         <AnimationTrigger>
-          <Pullquote>
+          <Pullquote notopborder>
             <h3>
               Reducing overheads
             </h3>
@@ -212,7 +209,7 @@ function App() {
       <Slider />
       <Pagebody
         title="You have to keep evolving"
-        img={dumbbell}
+        img={evolving}
       >
         <AnimationTrigger>
           <p>
@@ -250,17 +247,44 @@ function App() {
       <VerticalSlider />
       <BasicSlider />
       <Pagebody
-        title="You have to keep evolving"
-        img={dumbbell}
+        title="So what does the future hold?"
+        img={futureHold}
       >
         <AnimationTrigger>
           <p>
-            So the advantages of using digitisation to transform business are clear – yet many companies hold back because of concerns about the challenges of implementing digitisation. However, by starting small and maintaining clarity about your goals, becoming a digital-first business can be straightfoward.
+            The most forward-thinking enterprises are using digital technologies not just to reproduce their existing business model, such as replacing a paper order book with a spreadsheet, but to completely transform their business and create new revenue streams.
+          </p>
+          <p>
+            Ms Moore, of Atos, has worked on a project with a health body that used AI to make sure organs for donation were “matched as best as they possibly could be”.
+          </p>
+          <p>
+            More common applications include using artificial intelligence to track customer journeys, such as a telecommunications company recording the cycle people go on before buying a mobile phone and optimising that.
+          </p>
+        </AnimationTrigger>
+        <AnimationTrigger>
+          <Pullquote quote>
+            <h3>
+              AI means you can get through data that you could never do in a million years from a human point of view
+            </h3>
+            <p>
+              Jillian Moore, head of digital for UK and Ireland at IT company Atos
+            </p>
+          </Pullquote>
+        </AnimationTrigger>
+        <AnimationTrigger>
+          <p>
+            Mr Khan, of Pulsant, says medium-sized companies are at an advantage because they do not have the pre-existing infrastructure of many large companies.
+          </p>
+          <p>
+            For companies that get it right, tech offers an enormous opportunity to thrive. Mr Bellamy, of NatWest, says his tech clients are, on average, growing at 10pc a year, almost seven times the rate for the overall UK economy, which demonstrates the value of going digital for small and medium-sized businesses. Technology allows for increased efficiency - which in turn drives cutting costs, and it also allows businesses to streamline processes, enhance interaction with customers and employees, and deliver excellent customer experience informed by data.
+          </p>
+          <p>
+            Phil Young, head of strategic policy delivery at Digital Catapult, a government-supported innovation centre, says: “If you take the steps to do it and understand what those technologies can do even at a base level, you really prepare yourself for the future and to make really sensible, innovative, strategy-led decisions.”
           </p>
         </AnimationTrigger>
       </Pagebody>
       <CTA>
-        <p>For more information visit the NatWest Rethinking Business Hub</p>
+        <p>To find out more about getting your business ready for the digital future, visit the NatWest Business Hub</p>
         <Button
           link="https://ad.doubleclick.net/ddm/trackclk/N8083.124621MSNUK/B22370404.240723500;dc_trk_aid=443465896;dc_trk_cid=105350124;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua="
         />
