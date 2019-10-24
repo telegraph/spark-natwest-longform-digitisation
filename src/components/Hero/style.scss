@@ -104,6 +104,7 @@
 @media (max-width: 1200px) {
   .hero {
     flex-flow: column;
+    height: auto;
     .hero__content {
       margin: 0 auto;
       max-width: unset;

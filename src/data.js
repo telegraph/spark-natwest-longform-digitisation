@@ -223,14 +223,14 @@ export const verticalSlider = [
     copy:
       'In professional services, such as the accounting, legal and consulting sectors, the automation of routine tasks such as invoicing is already saving time and reducing costs. Increasingly, AI and machine learning will enable innovation and differentiation in product and service offerings as well as the automation of more complex tasks.',
     coordTop: '6',
-    coordRight: '60',
+    coordRight: '70',
   },
   {
     stat: 'Navigation and control systems',
     copy:
       'Electric technology is already redefining the way cars use fuel, with electric, hybrid and solar energy systems beginning to displace internal combustion engine and gas-fed engines. However, it is the growth of autonomous technologies that will redefine the driving experience, with control slowly being handed over to onboard computers. Ultimately customers will interact with these navigation systems, but will not be in direct control.',
     coordTop: '12',
-    coordRight: '15',
+    coordRight: '10',
   },
   {
     stat: 'Digital tracking',
@@ -243,7 +243,7 @@ export const verticalSlider = [
     stat: 'Just-in-time delivery',
     copy:
       'Big data lets manufacturers track each item sold, including sale date and time. Inputting additional information such as when demand peaks and drops means companies can generate detailed demand forecasts and manufacture products to order, minimising the amount of inventory that will go unsold.',
-    coordTop: '32',
+    coordTop: '35',
     coordRight: '20',
   },
   {
@@ -257,21 +257,21 @@ export const verticalSlider = [
     stat: 'Data analytics',
     copy:
       'Firms can increasingly capture high-quality information on their customers, allowing them to understand who they are and what they want. Sectors such as banking and leisure, for example, can use this to build tailored, customised promotions and offers to meet those demands, increasing customer loyalty.',
-    coordTop: '54',
-    coordRight: '30',
+    coordTop: '60',
+    coordRight: '20',
   },
   {
     stat: 'Chatbots',
     copy:
       'Banks have already taken advantage of AI-enabled tools such as chatbots to interact with customers. This is just the beginning. AI is also enabling banks to automate credit scoring and predict future customer behaviours. Automation means staff can focus on valuable, higher-level work such as conversations with customers about new products.',
-    coordTop: '65',
+    coordTop: '75',
     coordRight: '54',
   },
   {
     stat: 'Artificial intelligence',
     copy:
       'AI is increasingly being used to detect diseases, such as cancers, more accurately and at an early stage. The use of AI is also allowing health organisations to review X-rays faster and with more accuracy. Meanwhile, a rapid increase in consumer tech means doctors and other health specialists are able to better monitor and detect disease and illness earlier when it is still treatable.',
-    coordTop: '76',
+    coordTop: '80',
     coordRight: '10',
   },
 ];

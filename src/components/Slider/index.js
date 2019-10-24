@@ -7,7 +7,7 @@ import officeSliderCube from '../../assets/office-slider-cube.svg';
 import './style.scss';
 
 function Slider({ link }) {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(transformingLandscape);
   const [currentItem, changeCurrentItem] = useState(0);
   const [itemProgress, changeItemProgress] = useState(0);
   const [childEls, setChildEls] = useState(null);
@@ -26,16 +26,15 @@ function Slider({ link }) {
   }
 
   useEffect(() => {
-    // on Mount set item data
-    setItems(transformingLandscape);
-  }, []);
-
-  useEffect(() => {
-    // When container ref is loaded / changes
     if (container.current !== null) {
       setChildEls([...container.current.querySelectorAll('.container__item')]);
     }
-  }, [container.current]);
+  }, [items]);
+
+  useEffect(() => {
+    // if the childels are present - but only do this function once
+    if (childEls !== null && currentItem === 0) setContainerHeight(childEls[0].offsetHeight);
+  }, [childEls]);
 
   useEffect(() => {
     // Whenever currentItem is updated...
@@ -67,8 +66,10 @@ function Slider({ link }) {
         Transforming our business landscape
       </h2>
       <div className="slider__bg" />
-      <div className="slider__container" ref={container}
-        style={{height: `${containerHeight}px`}}
+      <div
+        className="slider__container"
+        ref={container}
+        style={{ height: `${containerHeight}px` }}
       >
         {items.map((item, i) => (
           <div
