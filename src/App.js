@@ -37,8 +37,8 @@ function App() {
   const changeProgress = () => {
     window.requestAnimationFrame(() => {
       let progressState = progress;
-      const docHeight = document.body.scrollHeight;
-      const scrolled = window.scrollY + window.innerHeight;
+      const docHeight = document.body.scrollHeight - window.innerHeight;
+      const scrolled = window.pageYOffset;
       const difference = docHeight + scrolled;
       const percentage = difference / docHeight - 1;
       progressState = percentage;
