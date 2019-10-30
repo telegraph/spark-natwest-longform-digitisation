@@ -4,12 +4,12 @@ import makeVisible from '../../hooks/makeVisible';
 
 import './style.scss';
 
-function Pullquote({quote, specialQuote, notopborder, children}) {
+function Pullquote({quote, specialQuote, notopborder, nopaddingtop ,children}) {
   const [bodyContent, isVisible] = makeVisible();
 
 
   return (
-    <div className={`pullquote ${quote ? 'pullquote--withquote' : ''} ${notopborder ? 'pullquote--notopborder' : ''} ${specialQuote ? 'pullquote--special' : ''} ${isVisible ? 'visible' : ''}`} ref={bodyContent}>
+    <div className={`pullquote ${quote ? 'pullquote--withquote' : ''} ${notopborder ? 'pullquote--notopborder' : ''} ${specialQuote ? 'pullquote--special' : ''} ${nopaddingtop ? 'pullquote--nopaddingtop' : ''} ${isVisible ? 'visible' : ''}`} ref={bodyContent}>
       {children}
     </div>
   );

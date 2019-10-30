@@ -27,7 +27,7 @@ const Header = (props) => (
         </a>
       </div>
     </div>
-    <ProgressBar progress={props.progress} />
+    <ProgressBar />
   </div>
 );
 

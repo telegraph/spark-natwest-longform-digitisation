@@ -20,28 +20,24 @@ function Timeline({ title, items, oneLineTitle, anchor }) {
   const timeLine = useRef(null);
   const timelineTitle = useRef(null);
 
-  // const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }));
-
   const handleScroll = () => {
     // Calculates when the timeline title should be fixed / when it should fade
-    window.requestAnimationFrame(() => {
-      const timeLineBB = timeLine.current.getBoundingClientRect();
-      const timeLineTitleBB = timelineTitle.current.getBoundingClientRect();
-      if (timeLineBB.top - window.innerHeight < 0 && timeLineBB.bottom > 0) {
-        if ((timeLineTitleBB.top < 110 && !fixed) && (timeLineBB.bottom - window.innerHeight > 0)) {
-          updateFixed(true);
-          triggerTitleFade(false);
-        } else if ((timeLineBB.bottom < 0 && fixed) || timeLineBB.top > 110) {
+    const timeLineBB = timeLine.current.getBoundingClientRect();
+    const timeLineTitleBB = timelineTitle.current.getBoundingClientRect();
+    if (timeLineBB.top - window.innerHeight < 0 && timeLineBB.bottom > 0) {
+      if ((timeLineTitleBB.top < 110 && !fixed) && (timeLineBB.bottom - window.innerHeight > 0)) {
+        updateFixed(true);
+        triggerTitleFade(false);
+      } else if ((timeLineBB.bottom < 0 && fixed) || timeLineBB.top > 110) {
+        updateFixed(false);
+        triggerTitleFade(false);
+      } else if (timeLineBB.bottom < (window.innerHeight / 2)) {
+        triggerTitleFade(true);
+        setTimeout(() => {
           updateFixed(false);
-          triggerTitleFade(false);
-        } else if (timeLineBB.bottom < (window.innerHeight / 2)) {
-          triggerTitleFade(true);
-          setTimeout(() => {
-            updateFixed(false);
-          }, 300);
-        }
+        }, 300);
       }
-    });
+    }
   };
 
   useEffect(() => {

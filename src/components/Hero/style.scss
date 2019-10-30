@@ -105,6 +105,8 @@
   .hero {
     flex-flow: column;
     height: auto;
+    margin-top: 50px;
+    padding: 25px;
     .hero__content {
       margin: 0 auto;
       max-width: unset;

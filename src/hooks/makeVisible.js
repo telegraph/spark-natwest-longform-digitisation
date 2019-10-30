@@ -7,12 +7,10 @@ export default () => {
   const ref = useRef(null);
 
   const listener = () => {
-    window.requestAnimationFrame(() => {
-      const distance = ref.current.getBoundingClientRect().top - window.innerHeight;
-      if (distance < -200) {
-        setVisibility(true);
-      }
-    });
+    const distance = ref.current.getBoundingClientRect().top - window.innerHeight;
+    if (distance < -200) {
+      setVisibility(true);
+    }
   };
 
   useEffect(() => {

@@ -7,6 +7,7 @@ import officeSliderCube from '../../assets/office-slider-cube.svg';
 import './style.scss';
 
 function Slider({ link }) {
+
   const [items, setItems] = useState(transformingLandscape);
   const [currentItem, changeCurrentItem] = useState(0);
   const [itemProgress, changeItemProgress] = useState(0);
@@ -32,7 +33,7 @@ function Slider({ link }) {
   }, [items]);
 
   useEffect(() => {
-    // if the childels are present - but only do this function once
+    // if the childels are present - but only do this function on first slide
     if (childEls !== null && currentItem === 0) setContainerHeight(childEls[0].offsetHeight);
   }, [childEls]);
 
@@ -85,7 +86,7 @@ function Slider({ link }) {
         <div className="slider-total">
           {`${currentItem + 1} of ${items.length}`}
         </div>
-        <div role="button" className={`slider-cont slider-next ${currentItem >= 16 ? 'noclick' : ''}`} onClick={() => nextItem()} />
+        <div role="button" className={`slider-cont slider-next ${currentItem >= (items.length - 1) ? 'noclick' : ''}`} onClick={() => nextItem()} />
       </div>
       <div className="slider__progress">
         <div className="progress-points" ref={points}>
@@ -103,7 +104,7 @@ function Slider({ link }) {
         </div>
         <div className="progress-line">
         <input type="range"
-          min="0" max="16" onChange={handleThis} value={currentItem} step="1"></input>
+          min="0" max={items.length - 1} onChange={handleThis} value={currentItem} step="1"></input>
           <div className="line-marker" style={{ left: `${itemProgress}%` }}>
             <img src={officeSliderCube} />
           </div>

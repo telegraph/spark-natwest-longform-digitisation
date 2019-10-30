@@ -32,35 +32,13 @@ import Broughttyb from './components/Broughttyb';
 import futureHold from './assets/titles/future-hold.svg';
 
 function App() {
-  const [progress, setProgress] = useState(0);
-
-  const changeProgress = () => {
-    window.requestAnimationFrame(() => {
-      let progressState = progress;
-      const docHeight = document.body.scrollHeight - window.innerHeight;
-      const scrolled = window.pageYOffset;
-      const difference = docHeight + scrolled;
-      const percentage = difference / docHeight - 1;
-      progressState = percentage;
-      setProgress(progressState);
-    });
-  };
-
-  useEffect(() => {
-    // on update
-    document.addEventListener('scroll', changeProgress);
-    return function cleanup() {
-      document.removeEventListener('scroll', changeProgress);
-    };
-  });
-
   useEffect(() => {
     analytics.send('App Loaded');
   }, []);
 
   return (
     <>
-      <Header progress={progress} />
+      <Header />
       <Hero />
       <PullQuoteSpecial>
         <Pullquote specialQuote>
@@ -105,7 +83,7 @@ function App() {
       />
       <Pagebody title="Reaping the benefits of digitisation" img={reaping}>
         <AnimationTrigger>
-          <Pullquote notopborder>
+          <Pullquote notopborder nopaddingtop>
             <h3>
               Being on a level playing field
             </h3>
@@ -158,7 +136,7 @@ function App() {
         img={aware}
       >
         <AnimationTrigger>
-          <Pullquote notopborder>
+          <Pullquote notopborder nopaddingtop>
             <h3>
               Security concerns
             </h3>

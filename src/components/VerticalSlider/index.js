@@ -45,6 +45,12 @@ function VerticalSlider() {
   };
 
   const amountScrolledandHeight = () => {
+    // only if slider in view should I return anything here.
+    if ((bubbleSlider.current.getBoundingClientRect().top - window.innerHeight) > 0 || bubbleSlider.current.getBoundingClientRect().bottom < 0) {
+      console.log('out of view');
+      return;
+    }
+
     handleScroll();
     // get amount of slider scrolled
     const value = bubbleSlider.current.getBoundingClientRect().top - window.innerHeight;

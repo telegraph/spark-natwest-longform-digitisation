@@ -8,12 +8,8 @@ import { basicSlider } from '../../data';
 
 export default function BasicSlider() {
   const [currentSlide, changeCurrentSlide] = useState(0);
-  const [data, setData] = useState([]);
-  const [currentSlideHeight, setCurrentSlideHeight] = useState(0);
-
-  const grabData = () => {
-    setData(basicSlider);
-  };
+  const [data, setData] = useState(basicSlider);
+  const [currentSlideHeight, setCurrentSlideHeight] = useState();
 
   const prevSlide = () => {
     changeCurrentSlide(currentSlide - 1);
@@ -22,10 +18,6 @@ export default function BasicSlider() {
   const nextSlide = () => {
     changeCurrentSlide(currentSlide + 1);
   };
-
-  useEffect(() => {
-    grabData();
-  }, []);
 
   const grabSlideRefHeight = (ref) => {
     const { height } = ref.current.getBoundingClientRect();
