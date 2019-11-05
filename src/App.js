@@ -54,7 +54,7 @@ function App() {
         <AnimationTrigger>
           <p>
             <Dropcap>O</Dropcap>
-            nly the biggest businesses used to be able to aord to invest in cutting-edge technology.
+            nly the biggest businesses used to be able to afford to invest in cutting-edge technology.
           </p>
           <p>
             But successive waves of innovation, from the arrival of the web through to smartphones, cloud computing and artificial intelligence (AI), are providing even the smallest businesses with the advantages that were once only available to those with the deepest pockets.

@@ -37,20 +37,6 @@
     }
   }
 
-  .vertical-slider__title:before {
-    content: '';
-    content: "";
-    background: url('../../assets/gradient.png' );
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 350%;
-    width: 100vw;
-    bottom: -67px;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-   }
-
   .vertical-slider__container {
     position: relative;
     height: 100%;
@@ -97,7 +83,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .vertical-slider {
     .vertical-slider__container {
       max-width: 80%;

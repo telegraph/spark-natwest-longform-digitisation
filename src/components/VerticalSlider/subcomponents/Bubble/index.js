@@ -22,7 +22,7 @@ function Bubble(props) {
       // Calc distance from top and bottom of page and implement fade from 0-1
       const distance = bubble.current.getBoundingClientRect().top - window.innerHeight;
       const distanceBottom = bubble.current.getBoundingClientRect().bottom - window.innerHeight;
-      const halfWindow = window.innerHeight / 2;
+      const halfWindow = window.innerHeight / 4;
       if (distance < 0 && distance > (-halfWindow)) {
         moveBubble();
         const opacity = distance / -halfWindow;

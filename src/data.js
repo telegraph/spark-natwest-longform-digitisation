@@ -223,7 +223,7 @@ export const verticalSlider = [
     copy:
       'In professional services, such as the accounting, legal and consulting sectors, the automation of routine tasks such as invoicing is already saving time and reducing costs. Increasingly, AI and machine learning will enable innovation and differentiation in product and service offerings as well as the automation of more complex tasks.',
     coordTop: '6',
-    coordRight: '60',
+    coordRight: '70',
   },
   {
     stat: 'Navigation and control systems',
